@@ -1,0 +1,33 @@
+Accessing and Printing Array Elements
+
+Let’s consider an array numbers that stores 5 integers:
+
+#include <stdio.h>
+
+int main() {
+
+int numbers[5] = {10, 20, 30, 40, 50}; // Array declaration and initialization
+
+// Accessing and printing each element
+
+printf("First element: %d\n", numbers[0]); // Access element at index 0
+
+printf("Second element: %d\n", numbers[1]); // Access element at index 1
+
+printf("Third element: %d\n", numbers[2]); // Access element at index 2
+
+printf("Fourth element: %d\n", numbers[3]); // Access element at index 3
+
+printf("Fifth element: %d\n", numbers[4]); // Access element at index 4
+
+return 0;}
+// output:
+First element: 10
+
+Second element: 20
+
+Third element: 30
+
+Fourth element: 40
+
+Fifth element: 50
