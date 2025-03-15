@@ -1,0 +1,45 @@
+write a program to read an array of 10 integers and count total number of even and odd elements
+
+#include <stdio.h>
+
+int main() {
+
+int numbers[10]; // Array to store 10 integers
+
+int evenCount = 0, oddCount = 0; // Variables to count even and odd numbers
+
+// Read 10 integers from the user
+
+printf("Enter 10 integers:\n");
+
+for (int i = 0; i < 10; i++) {
+
+scanf("%d", &numbers[i]); // Store each integer in the array
+
+}
+
+// Count even and odd numbers
+
+for (int i = 0; i < 10; i++) {
+
+if (numbers[i] % 2 == 0) {
+
+evenCount++; // Increment even counter if the number is divisible by 2
+
+} else {
+
+oddCount++; // Increment odd counter if the number is not divisible by 2
+
+}
+
+}
+
+// Display the counts
+
+printf("Total even numbers: %d\n", evenCount);
+
+printf("Total odd numbers: %d\n", oddCount);
+
+return 0;
+
+}
