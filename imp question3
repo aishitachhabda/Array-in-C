@@ -1,0 +1,64 @@
+C program that implements the Selection Sort algorithm on 10 numbers entered by the
+user through the keyboard
+
+#include <stdio.h>
+
+int main() {
+
+int arr[10], i, j, min_idx, temp;
+
+// Input: Taking 10 numbers from the user
+
+printf("Enter 10 numbers: \n");
+
+for (i = 0; i < 10; i++) {
+
+scanf("%d", &arr[i]); // Reading 10 numbers from user input
+
+}
+
+// Selection Sort algorithm
+
+for (i = 0; i < 9; i++) {
+
+min_idx = i; // Assume the current element is the smallest
+
+// Find the smallest element in the remaining unsorted array
+
+for (j = i + 1; j < 10; j++) {
+
+if (arr[j] < arr[min_idx]) {
+
+min_idx = j; // Update index of the smallest element
+
+}
+
+}
+
+// Swap the found minimum element with the current element
+
+if (min_idx != i) {
+
+temp = arr[i];
+
+arr[i] = arr[min_idx];
+
+arr[min_idx] = temp;
+
+}
+
+}
+
+// Output: Sorted array
+
+printf("Sorted array in ascending order: \n");
+
+for (i = 0; i < 10; i++) {
+
+printf("%d ", arr[i]);
+
+}
+
+return 0;
+
+}
