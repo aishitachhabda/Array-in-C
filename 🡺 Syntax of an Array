@@ -1,0 +1,13 @@
+🡺 Syntax of an Array
+
+data_type array_name[size];
+
+Where:
+
+data_type: The type of the elements stored in the
+array (e.g., int, float, char).
+
+array_name: The name of the array.
+
+size: The number of elements the array can hold (the
+size of the array).
