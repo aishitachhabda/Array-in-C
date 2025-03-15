@@ -1,0 +1,66 @@
+//C program that implements the Selection Sort algorithm on 3 numbers entered by the
+user through the keyboard
+
+#include <stdio.h>
+
+int main() {
+
+int a, b, c, temp;
+
+// Input: Taking three numbers from the user
+
+printf("Enter three numbers: \n");
+
+scanf("%d %d %d", &a, &b, &c);
+
+// Output: Before sorting
+
+printf("Before sorting: a = %d, b = %d, c = %d\n", a, b, c);
+
+// Selection Sort logic for three numbers
+
+// Step 1: Compare 'a' with 'b' and 'c'
+
+if (a > b) {
+
+// Swap 'a' and 'b' if 'a' is greater than 'b'
+
+temp = a;
+
+a = b;
+
+b = temp;
+
+}
+
+if (a > c) {
+
+// Swap 'a' and 'c' if 'a' is greater than 'c'
+
+temp = a;
+
+a = c;
+
+c = temp;
+
+}
+
+// Step 2: Compare 'b' and 'c'
+
+if (b > c) {
+
+// Swap 'b' and 'c' if 'b' is greater than 'c'
+
+temp = b;
+
+b = c;
+
+c = temp;
+
+}
+
+// Output: After sorting
+
+printf("After sorting: a = %d, b = %d, c = %d\n", a, b, c);
+
+return 0;
