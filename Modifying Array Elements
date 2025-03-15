@@ -1,0 +1,28 @@
+1: Modifying Array Elements
+
+You can also modify the value of an array element by assigning a new value to it.
+
+#include <stdio.h>
+
+int main() {
+
+int marks[3] = {80, 85, 90}; // Initializing the array
+
+// Modifying the second element (index 1)
+
+marks[1] = 95;
+
+// Printing the updated array elements
+
+printf("First mark: %d\n", marks[0]); // Output: 80
+
+printf("Second mark: %d\n", marks[1]); // Output: 95 First mark: 80
+
+Second mark: 95
+
+Third mark: 90(Modified value)
+
+printf("Third mark: %d\n", marks[2]); // Output: 90
+
+return 0;}
+//output
